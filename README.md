@@ -1,76 +1,118 @@
-🍽️ Restaurant Management System
+# 🍽️ Restaurant Management System - Python
 
-📌 About the Project
+A Python-based Restaurant Management System that helps manage restaurant table reservations, customer bookings, table availability, and dining schedules using Flask and MySQL.
 
-The Restaurant Management System is a Python-based application designed to simplify restaurant operations and improve daily management activities.
+## 📌 Features
 
-It helps manage restaurant-related tasks such as menu management, customer orders, billing, and order tracking through a user-friendly interface.
+- Interactive restaurant management dashboard
+- Create new customer reservations
+- Store customer reservation details in MySQL
+- Manage restaurant table availability
+- Display 12 pre-configured restaurant tables
+- Track Available, Occupied, and Reserved table statuses
+- View all customer reservations
+- Update reservation statuses
+- Manage dining schedules
+- Check table seating capacity before booking
+- Prevent overlapping table reservations within a two-hour booking window
+- Display upcoming reservations
+- Show daily reservation and guest statistics
+- Optional Tkinter desktop administration interface
+- Automatically create the MySQL database and required tables
 
-This project is developed as a beginner-friendly Python project to demonstrate practical programming and application development skills.
+## 💾 Database Storage
 
-✨ Features
+The project uses a MySQL database named:
 
-- 📋 Menu Management
-- 🛒 Customer Order Management
-- 🧾 Billing and Payment Calculation
-- 🍔 Food Item Selection
-- 📊 Order Details Management
-- 🖥️ User-Friendly Interface
-- ⚡ Easy-to-use application
+`restaurant_db`
 
-🛠️ Technologies Used
+The database contains two main tables:
 
-- Programming Language: Python
-- Frontend: HTML, CSS (if applicable)
-- Backend: Python
-- Database: MySQL (if applicable)
+**1. restaurant_tables**
 
-📂 Project Structure
+- Table ID
+- Table Number
+- Seating Capacity
+- Table Status
 
-Restaurant-Management-System/
-│
-├── restaurant_management.py
-├── README.md
-└── LICENSE
+**2. reservations**
 
-⚙️ Installation and Setup
+- Reservation ID
+- Customer Name
+- Phone Number
+- Table ID
+- Reservation Date
+- Reservation Time
+- Number of Guests
+- Reservation Status
+- Booking Creation Date
 
-1. Clone the Repository
+## 🧠 Concepts Used
 
-git clone YOUR_GITHUB_REPOSITORY_URL
+- Python Functions
+- Flask Web Framework
+- MySQL Database Connectivity
+- SQL Queries
+- Database Creation and Table Creation
+- CRUD Operations
+- Primary Key and Foreign Key
+- Python Exception Handling
+- HTML and CSS
+- Jinja2 Template Rendering
+- Form Handling
+- Conditional Statements
+- Loops
+- Database Relationships
+- Tkinter GUI Development
+- Input Validation
 
-2. Open the Project Folder
+## 📦 Libraries Used
 
-cd restaurant-management-system
+Install the required libraries using:
 
-3. Install Required Libraries
+```bash
+pip install flask mysql-connector-python
+```
 
-Install the required dependencies according to your project.
+**Built-in Python Modules:**
+- `sys`
+- `datetime`
+- `tkinter`
+- `ttk`
+- `messagebox`
 
-4. Run the Application
+## ▶️ How to Run
 
+**1.** Make sure Python and MySQL Server are installed.
+
+**2.** Configure your MySQL username and password in the Python file.
+
+**3.** Install the required libraries:
+
+```bash
+pip install flask mysql-connector-python
+```
+
+**4.** Run the Python file:
+
+```bash
 python restaurant_management.py
+```
 
-🎯 Project Objective
+**5.** Open the application in your browser:
 
-The main objective of this project is to develop a simple and efficient restaurant management application that reduces manual work and makes restaurant operations easier to handle.
+```text
+http://127.0.0.1:5000
+```
 
-🚀 Future Improvements
+**Optional Desktop Mode:**
 
-- Online Food Ordering
-- Customer Login and Registration
-- Sales and Revenue Analytics
-- Inventory Management
-- Digital Payment Integration
+```bash
+python restaurant_management.py --desktop
+```
 
-👨‍💻 Developer
+## 👨‍💻 Developed By
 
-Tejas Jadhav
+**Tejas Khemjadhao**
 
-B.Tech – Computer Science and Engineering
-
-Priyadarshini Engineering College
-
-📜 License
-
-This project is licensed under the MIT License.
+GitHub: https://github.com/tejkhemjadhao9606-glitch
