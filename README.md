@@ -28,14 +28,14 @@ The project uses a MySQL database named:
 
 The database contains two main tables:
 
-**1. restaurant_tables**
+### 1. restaurant_tables
 
 - Table ID
 - Table Number
 - Seating Capacity
 - Table Status
 
-**2. reservations**
+### 2. reservations
 
 - Reservation ID
 - Customer Name
@@ -75,6 +75,7 @@ pip install flask mysql-connector-python
 ```
 
 **Built-in Python Modules:**
+
 - `sys`
 - `datetime`
 - `tkinter`
@@ -83,29 +84,48 @@ pip install flask mysql-connector-python
 
 ## ▶️ How to Run
 
-**1.** Make sure Python and MySQL Server are installed.
+**1. Install Python and MySQL Server**
 
-**2.** Configure your MySQL username and password in the Python file.
+Make sure Python and MySQL Server are installed and running on your computer.
 
-**3.** Install the required libraries:
+**2. Configure MySQL Connection**
+
+Update your MySQL username and password in the Python file.
+
+```python
+MYSQL_HOST = "localhost"
+MYSQL_USER = "root"
+MYSQL_PASSWORD = "your_mysql_password"
+DATABASE_NAME = "restaurant_db"
+```
+
+**3. Install Required Libraries**
 
 ```bash
 pip install flask mysql-connector-python
 ```
 
-**4.** Run the Python file:
+**4. Run the Python File**
 
 ```bash
 python restaurant_management.py
 ```
 
-**5.** Open the application in your browser:
+The application automatically creates the database and required tables.
+
+**5. Open the Application**
+
+Open your browser and visit:
 
 ```text
 http://127.0.0.1:5000
 ```
 
-**Optional Desktop Mode:**
+### Optional Desktop Mode
+
+The project also supports a Tkinter-based desktop administration interface.
+
+Run the following command:
 
 ```bash
 python restaurant_management.py --desktop
@@ -113,6 +133,10 @@ python restaurant_management.py --desktop
 
 ## 👨‍💻 Developed By
 
-**Tejas Khemjadhao**
+**Tejas Jadhao**
 
-GitHub: https://github.com/tejkhemjadhao9606-glitch
+GitHub: [@tejkhemjadhao9606-glitch](https://github.com/tejkhemjadhao9606-glitch)
+
+---
+
+⭐ If you find this project useful, don't forget to give it a star on GitHub!
